@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 /**
- *
- * main - Entry Point
- *
- * Retrn: Always 0 (Success)
+ * main - Program that prints alphabet in lower case then in upper case
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -25,5 +24,6 @@ int main(void)
 		m++;
 	}
 	putchar('\n');
+
 	return (0);
 }

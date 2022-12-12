@@ -10,16 +10,13 @@ int main(void)
 	int a = 0;
 	int b = a + 1;
 
-	while (a <= 9)
+	while (a <= 9 && b < 9)
 	{
 		putchar(a + '0');
-		while (b < 9)
-		{
-			putchar(b + '0');
-			putchar(',');
-			putchar(' ');
-			b++;
-		}
+		putchar(b + '0');
+		putchar(',');
+		putchar(' ');
+		b++;
 		a++;
 	}
 	return (0);

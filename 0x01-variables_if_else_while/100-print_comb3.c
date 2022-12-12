@@ -20,8 +20,8 @@ int main(void)
 			if (a < 8)
 			{
 				putchar(',');
+				putchar(' ');
 			}
-			putchar(' ');
 			b++;
 		}
 		a++;

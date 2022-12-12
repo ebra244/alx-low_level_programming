@@ -7,17 +7,20 @@
  */
 int main(void)
 {
-	for (int a = 0; a <= 9; a++)
+	int a = 0;
+	int b = a + 1;
+
+	while (a <= 9)
 	{
-		for (int b = 1; b <= 9; b++)
+		while (b < 9)
 		{
-			if (a != b)
-			{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(a + '0');
+			putchar(b + '0');
+			putchar(',');
+			putchar(' ');
+			b++;
 		}
+		a++;
 	}
+	return (0);
 }

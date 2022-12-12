@@ -12,9 +12,9 @@ int main(void)
 
 	while (a <= 9)
 	{
+		putchar(a + '0');
 		while (b < 9)
 		{
-			putchar(a + '0');
 			putchar(b + '0');
 			putchar(',');
 			putchar(' ');

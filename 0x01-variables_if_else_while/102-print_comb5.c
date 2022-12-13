@@ -1,29 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Program that prints all possible combination of two digit numbers
- *
+ * main - Program that prints all possible combination of two digits
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a = '0';
+	int n = '0';
 
-	while (a <= 9)
+	while (n <= 9)
 	{
-		int b = '0';
-		while (b <= 9)
+		int m = '0';
+
+		while (m <= 9)
 		{
-			putchar(a + '0');
-			putchar(b + '0');
-			if (a < 9)
+			putchar(n + '0');
+			putchar(m + '0');
+			if (n < 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			b++;
+			m++;
+
 		}
-		a++;
+		n++;
 	}
 	putchar('\n');
 	return (0);

@@ -9,10 +9,6 @@ void print_diagonal(int n)
 	{
 		_putchar('\n');
 	}
-	else if (n == 1)
-	{
-		_putchar(92);
-	}
 	else
 	{
 		int i = 1;

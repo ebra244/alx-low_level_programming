@@ -7,12 +7,12 @@
 int main(void)
 {
 	long int num = 612852475143;
-	int div = 2;
-	int ans = 0;
-	long int max_prime_fact;
-
+	
 	while (num != 0)
 	{
+		int div = 2;
+		long int max_prime_fact;
+
 		if (num % div != 0)
 			div = div + 1;
 		else
@@ -23,7 +23,6 @@ int main(void)
 			if (num == 1)
 			{
 				printf("%ld is the largest prime factor:", max_prime_fact);
-				ans = 1;
 				break;
 			}
 		}

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /**
  * main - Program that prints the largest prime factor of a number
  * @n: The number to be tested
@@ -7,12 +8,11 @@
 int main(void)
 {
 	long int num = 612852475143;
+	long int div = 2;
+	long int max_prime_fact;
 	
 	while (num != 0)
 	{
-		int div = 2;
-		long int max_prime_fact;
-
 		if (num % div != 0)
 			div = div + 1;
 		else

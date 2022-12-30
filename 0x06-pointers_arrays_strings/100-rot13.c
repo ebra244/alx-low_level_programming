@@ -8,6 +8,7 @@ char *rot13(char *a)
 {
 	int i = 0;
 	int j;
+	int k;
 	char alp[53] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
 			'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
 			'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
@@ -28,9 +29,10 @@ char *rot13(char *a)
 		for (j = 0; j < 52; j++)
 		{
 			if (a[i] == alp[j])
-			{
-				a[i] = rot13[j];
-			}
+				for (k = 0; k < 52; k++)
+				{
+					a[i] = rot13[k];
+				}
 		}
 		i++;
 	}

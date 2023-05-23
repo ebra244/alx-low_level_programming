@@ -14,11 +14,11 @@ void jack_bauer(void)
 
 		while (n < 60)
 		{
-			_putchar('m / 10');
-			_putchar('m % 10');
+			_putchar(m / 10 + '0');
+			_putchar(m % 10 + '0');
 			_putchar(':');
-			_putchar('n / 10');
-			_putchar('n % 10');
+			_putchar(n / 10 + '0');
+			_putchar(n % 10 + '0');
 			_putchar('\n');
 			n++;
 		}

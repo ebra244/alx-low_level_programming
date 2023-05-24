@@ -1,25 +1,22 @@
 #include <stdio.h>
 /**
- * fibonacci - Function that returns the fibonacci
- * @n: Number to be printed its fibonacci value
- * Return: The fibonacci value of teh argument
- */
-long int fibonacci(int n)
-{
-	if (n == 1)
-		return (1);
-	else if (n > 1)
-		return (fibonacci(n - 1) + fibonacci(n - 2));
-}
-/**
  * main - Entry Point
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	long int result = fibonacci(50);
+	long int i = 1, j = 2, m = 2, n;
 
-	printf("%ld", result);
+	printf("%ld, %ld", i, j);
+
+	while (m < 50)
+	{
+		n = i + j;
+		printf(", %ld", n);
+		i = j;
+		j = n;
+		m++;
+	}
 	printf("\n");
 	return (0);
 }

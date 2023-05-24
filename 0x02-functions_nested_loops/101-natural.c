@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * print_natural - Function that prints the sum of natural numbers
+ * main - Function that prints the sum of natural numbers
  * Return: Always 0 (success)
  */
-void print_natural(void)
+int main(void)
 {
 	int i = 0;
 	long sum = 0;
@@ -14,7 +14,7 @@ void print_natural(void)
 			sum += i;
 		i++;
 	}
-	printf("%d", sum);
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }

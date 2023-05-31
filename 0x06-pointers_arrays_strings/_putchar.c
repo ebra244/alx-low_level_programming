@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "main.h"
 /**
  * _putchar - Program that prints character to std out
  * @c: Character to be printed

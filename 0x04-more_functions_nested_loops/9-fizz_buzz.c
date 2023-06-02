@@ -2,6 +2,8 @@
 
 /**
  * main - Function that prints FizzBuzz
+ * Return: Always 0 (success)
+ * 1 Not success
  */
 int main(void)
 {

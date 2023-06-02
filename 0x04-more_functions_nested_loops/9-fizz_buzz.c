@@ -1,9 +1,9 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * fizz_buzz - Function that prints FizzBuzz
+ * main - Function that prints FizzBuzz
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 

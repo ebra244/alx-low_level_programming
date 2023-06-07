@@ -19,7 +19,7 @@ int prime(int n, int i)
 	return (prime(n, i + 1));
 }
 /**
- * is_prime_number _ Function that returns weater the number is prime or not
+ * is_prime_number - Function that returns weater the number is prime or not
  * @n: Number to be tested
  * Return: Always -1 if not success
  * 1 if success

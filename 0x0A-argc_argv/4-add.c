@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; argv[i]; i++)
 		{
-			n = atrtol(argv[i], &p, 10);
+			n = strtol(argv[i], &p, 10);
 			if (!*p)
 				total += n;
 			else

@@ -9,16 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1;
-	
-	if (argc == 1)
-		printf("0");
-	else
-	{
-		while (argv[i])
-			i++;
-		printf("%d", argc - 1);
-	}
+	(void)argv;
+	printf("%d", argc - 1);
 	printf("\n");
 	return (0);
 }

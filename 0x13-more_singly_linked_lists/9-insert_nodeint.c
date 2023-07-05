@@ -19,14 +19,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	new_ptr = malloc(sizeof(listint_t));
 
-	new_ptr->n = n;
-	new_ptr->next = NULL;
 	if (!new_ptr)
 		return (NULL);
 
+	new_ptr->n = n;
+	new_ptr->next = NULL;
 	trav_ptr = *head;
 
-	while (trav_ptr && (count < idx))
+	while (trav_ptr && (count < idx - 1))
 	{
 		count++;
 		trav_ptr = trav_ptr->next;

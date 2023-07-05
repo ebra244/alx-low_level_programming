@@ -9,15 +9,14 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *traverse_ptr = head;
 	unsigned int count = 0;
 
 	if (!head)
 		return (NULL);
-	while (traverse_ptr && count <= index)
+	while (head && (count < index))
 	{
-		traverse_ptr = traverse_ptr->next;
+		head = head->next;
 		count++;
 	}
-	return (traverse_ptr);
+	return (head);
 }

@@ -26,11 +26,15 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new_ptr->next = NULL;
 	trav_ptr = *head;
 
-	while (trav_ptr && (count < idx - 1))
+	if (idx)
 	{
-		count++;
-		trav_ptr = trav_ptr->next;
+		while (trav_ptr && (count < idx - 1))
+		{
+			count++;
+			trav_ptr = trav_ptr->next;
+		}
 	}
+
 	if (idx == 0)
 	{
 		new_ptr->next = *head;

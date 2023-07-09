@@ -3,7 +3,7 @@
 /**
  * list_len - Function that returns the number of elements of a list
  * @h: Pointer to the head of alist
- * Returns: The number of elements if success
+ * Return: The number of elements if success
  * Otherwise 0
  */
 size_t list_len(const list_t *h)
